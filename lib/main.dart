@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Routes/App_Routes.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Boarding.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Boarding_screen2.dart';
+import 'package:restaurant_app/Featurs/Boarding/ui/Confirm.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Forgerpass.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Login.dart';
 import 'package:restaurant_app/Featurs/Splash/Splash_screen.dart';
@@ -17,11 +19,11 @@ class Restaurant_app extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "S1":(context)=> Boarding_screen(),
-        "S2":(context)=> BoardingScreen2(),
-        "S3":(context)=> Login(),
-        "S4":(context)=> Forgerpass(),
-
+        AppRoutes.login: (context) => const Login(),
+        AppRoutes.forgetpass: (context) => const Forgerpass(),
+        AppRoutes.boarding: (context) => Boarding_screen(),
+        AppRoutes.boarding2: (context) => const BoardingScreen2(),
+        AppRoutes.Confirme: (context) => const Confirm(),
 
       },
       debugShowCheckedModeBanner: false,

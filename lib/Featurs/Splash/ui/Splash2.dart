@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Routes/App_Routes.dart';
 
 
 
@@ -26,7 +27,7 @@ class _Splash2State extends State<Splash2> {
 
   goforward() {
     Future.delayed(const Duration(seconds: 4), () {
-      Navigator.pushReplacementNamed(context, "S1");
+      Navigator.pushReplacementNamed(context, AppRoutes.boarding);
     });
   }
 

@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Custmertext extends StatelessWidget {
-  Custmertext({super.key, required this.text, required this.text2});
+  Custmertext(
+      {super.key,
+      required this.text,
+      required this.text2,
+      required this.onpressed});
 
   final String text;
   final String text2;
+  final void Function() onpressed;
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +26,7 @@ class Custmertext extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: () {
-              Navigator.pushNamed(context, "S3");
-            },
+            onTap: onpressed,
             child: Text(
               text2,
               style: const TextStyle(

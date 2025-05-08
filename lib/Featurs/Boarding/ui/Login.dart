@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Routes/App_Routes.dart';
 import 'package:restaurant_app/Core/Widget/CustmerButton.dart';
 import 'package:restaurant_app/Core/Widget/CustmerText.dart';
 import 'package:restaurant_app/Core/Widget/CustmerTextfield.dart';
@@ -23,9 +24,14 @@ class Login extends StatelessWidget {
           CustmerField(obscureText: false, hinttext: "Name @gmail.com", TextInputType: TextInputType.emailAddress, labelText: "Email",),
           Titel_widget(titel: "Password",),
          const Passwordwidget(),
-          Smallbox(),
-          Custmerbutton(sign: "Login",),
-          Center(child: Custmertext(text: "Don't have an account? " , text2: "Sing Up",)),
+          const Smallbox(),
+        Custmerbutton(sign: "Login", onpressed: () {
+          Navigator.pushNamed(context, AppRoutes.boarding2);
+        },),
+          Center(child: Custmertext(text: "Dont have an account", text2: "Sing Up", onpressed: () {
+            Navigator.pushNamed(context, AppRoutes.Singup);
+          })),
+
 
     ],
       ),

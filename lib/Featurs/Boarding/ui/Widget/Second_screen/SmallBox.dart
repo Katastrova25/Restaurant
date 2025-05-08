@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Routes/App_Routes.dart';
 
 class Smallbox extends StatelessWidget {
   const Smallbox({super.key});
@@ -19,7 +20,7 @@ class Smallbox extends StatelessWidget {
               child: const Text("forget password?",
                   style: TextStyle(color: Colors.redAccent)),
               onTap: () {
-                Navigator.pushNamed(context, "S4");
+                Navigator.pushNamed(context, AppRoutes.forgetpass);
               },
             )
           ],

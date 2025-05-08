@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Custmerbutton extends StatelessWidget {
-  Custmerbutton({super.key, required this.sign});
+  Custmerbutton({super.key, required this.sign, required this.onpressed});
 
   final String sign;
+  final void Function() onpressed;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
       child: ElevatedButton(
-        onPressed: () {
-          Navigator.pushNamed(context, "S2");
-        },
+        onPressed: onpressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xFFE66E28),
           minimumSize: const Size(double.infinity, 55),
