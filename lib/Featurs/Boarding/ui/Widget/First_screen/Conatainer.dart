@@ -13,9 +13,10 @@ class Conatainer1 extends StatelessWidget {
 
 
           Container(
-            margin: const EdgeInsets.all(20),
-            width: 355,
-            height: 335,
+            margin: const EdgeInsets.all(10),
+          height: 200,
+
+
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     alignment: Alignment.center,
@@ -23,7 +24,7 @@ class Conatainer1 extends StatelessWidget {
                     image: AssetImage(
                         'images/eating a variety of foods-pana 1.png'))),
           ),
-          const SizedBox(height: 10,)
+          const SizedBox(height: 5,)
           ,
           const Center(
             child: Text(

@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/Core/Routes/App_Routes.dart';
 import 'package:restaurant_app/Core/Widget/CustmerButton.dart';
@@ -14,38 +15,34 @@ class Boarding_screen extends StatelessWidget {
       body: Column(
         children: [
           const Custmerappbar(),
-          const SizedBox(
-            height: 50,
-          ),
+
           Expanded(
             child: Container(
-              margin: const EdgeInsets.all(20),
-              child: PageView(
-                scrollDirection: Axis.horizontal,
-                clipBehavior: Clip.none,
-                children: const [
-                  Conatainer1(),
-                  Conatainer1(),
-                  Conatainer1(),
-                ],
-              ),
-            ),
+
+                child: CarouselSlider(
+
+
+                  options: CarouselOptions(height: 400,autoPlay: true) ,
+                  items: [1, 2, 3, 4, 5].map((i) {
+                    return Builder(
+
+                      builder: (BuildContext context) {
+                        return const Conatainer1();
+                      },
+                    );
+                  }).toList(),
+                )),
           ),
-          Custmerbutton(
-            sign: "Sign Up",
-            onpressed: () {
-              Navigator.pushNamed(context, AppRoutes.boarding2);
-            },
-          ),
-          const SizedBox(
-            height: 7,
-          ),
-         Custmertext(text: "Already I have  account", text2: "Login", onpressed: () {
-           Navigator.pushNamed(context, AppRoutes.login);
-         },),
-          const SizedBox(
-            height: 7,
-          ),
+          const SizedBox(height: 12,),
+          Custmerbutton(sign: "Sign Up", onpressed: () {
+            Navigator.pushNamed(context, AppRoutes.boarding2);
+          }),
+          const SizedBox(height: 12,),
+          Center(child: Custmertext(text: "Already have an account ?", text2: "Login", onpressed: () {
+            Navigator.pushNamed(context, AppRoutes.login);
+          })),
+          const SizedBox(height: 40,)
+
         ],
       ),
     );
