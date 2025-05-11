@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant_app/Core/Routes/App_Routes.dart';
+import 'package:restaurant_app/Core/Routes/Routes.dart';
 
 class Smallbox extends StatelessWidget {
   const Smallbox({super.key});

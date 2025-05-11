@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurant_app/Core/Routes/App_Routes.dart';
+import 'package:restaurant_app/Core/Routes/Routes.dart';
 import 'package:restaurant_app/Core/Widget/CustmerButton.dart';
 import 'package:restaurant_app/Core/Widget/CustmerText.dart';
 import 'package:restaurant_app/Core/Widget/Custmerappbar.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Routes/Routes.dart';
 import 'package:restaurant_app/Core/Widget/CustmerButton.dart';
 import 'package:restaurant_app/Core/Widget/CustmerText.dart';
 import 'package:restaurant_app/Core/Widget/Custmerappbar.dart';
@@ -125,6 +126,7 @@ class Confirm extends StatelessWidget {
             child: Custmerbutton(
                 sign: "Confirm Code",
                 onpressed: () {
+               Navigator.pushNamed(context, AppRoutes.confirmpass);
 
                 }),
           ),

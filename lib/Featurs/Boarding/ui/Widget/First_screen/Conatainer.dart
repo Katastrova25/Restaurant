@@ -13,11 +13,15 @@ class Conatainer1 extends StatelessWidget {
 
 
           Container(
+
             margin: const EdgeInsets.all(10),
-          height: 200,
+         height: 200,
+            width: double.infinity,
+
 
 
             decoration: const BoxDecoration(
+
                 image: DecorationImage(
                     alignment: Alignment.center,
                     fit: BoxFit.cover,
