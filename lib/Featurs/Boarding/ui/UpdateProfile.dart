@@ -106,7 +106,7 @@ Numbertextfield(),
             CustmerField(obscureText: true, hinttext: "Enter your address", TextInputType: TextInputType.streetAddress, labelText: "Enter your address",),
 
             Custmerbutton(sign: "Update Profile", onpressed: (){
-              Navigator.pushNamed(context, AppRoutes.homes1);
+              Navigator.pushNamed(context, '/home');
             },),
             SizedBox(height: 20,),
 

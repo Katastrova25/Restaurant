@@ -27,7 +27,7 @@ class _Splash2State extends State<Splash2> {
 
   goforward() {
     Future.delayed(const Duration(seconds: 4), () {
-      Navigator.pushReplacementNamed(context, AppRoutes.boarding);
+      Navigator.pushReplacementNamed(context, "/boarding");
     });
   }
 

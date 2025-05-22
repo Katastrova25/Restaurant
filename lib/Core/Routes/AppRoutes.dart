@@ -6,6 +6,7 @@ import 'package:restaurant_app/Featurs/Boarding/ui/ConfirmPss.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Forgerpass.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/Login.dart';
 import 'package:restaurant_app/Featurs/Boarding/ui/UpdateProfile.dart';
+import 'package:restaurant_app/Featurs/home/presentation/home_screen/ui/homeScreen1.dart';
 import 'package:restaurant_app/Featurs/meals/presentation/meals_screen/ui/Food_details.dart';
 import 'package:restaurant_app/Featurs/restaurant/presentation/restaurant_screen/ui/restaurant_screen.dart';
 
@@ -32,6 +33,8 @@ case '/resturant':
         return CupertinoPageRoute(builder: (_) => const RestaurantScreen());
       case "/meals":
         return CupertinoPageRoute(builder: (_) => const MealsScreen());
+        case "/home":
+        return CupertinoPageRoute(builder: (_) => const Homescreen1());
 
      case "/details":
         return CupertinoPageRoute(builder: (_) => const FoodDetails());

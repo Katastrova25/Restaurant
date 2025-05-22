@@ -31,7 +31,8 @@ class Confirmpss extends StatelessWidget {
             Passwordwidget(),
             const SizedBox(height: 40,),
             Custmerbutton(sign: "Confirm Password", onpressed: () {
-              Navigator.pushNamed(context, AppRoutes.updateprofile);
+              Navigator.pushNamed(context, "/Updateprofile");
+
 
         })]
             ),

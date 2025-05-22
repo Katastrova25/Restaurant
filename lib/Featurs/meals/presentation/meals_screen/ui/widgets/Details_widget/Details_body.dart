@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/Core/Widget/Custmerappbar.dart';
 import 'package:restaurant_app/Featurs/meals/presentation/meals_screen/ui/widgets/Details_widget/Add_cart.dart';
 import 'package:restaurant_app/Featurs/meals/presentation/meals_screen/ui/widgets/Details_widget/Bottom_price.dart';
 import 'package:restaurant_app/Featurs/meals/presentation/meals_screen/ui/widgets/Details_widget/Description.dart';
@@ -22,6 +23,8 @@ class DetailsBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Custmerappbar(),
+               SizedBox(height: 20,),
 
                BoxFood(),
 
